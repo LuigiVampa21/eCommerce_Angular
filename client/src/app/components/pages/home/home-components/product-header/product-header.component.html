@@ -1,0 +1,21 @@
+<mat-card class="mb-4">
+  <div class="flex justify-between">
+    <div>
+      <button mat-button [matMenuTriggerFor]="sortByMenu">Sort by {{sort}}</button>
+      <mat-menu #sortByMenu="matMenu">
+        <button mat-menu-item (click)="onSort('desc')">desc</button>
+        <button mat-menu-item (click)="onSort('asc')">asc</button>
+      </mat-menu>
+    </div>
+    <div class="flex items-center">
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu">
+          Show {{ itemsCount }}
+        </button>
+        <mat-menu #menu="matMenu">
+
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</mat-card>
