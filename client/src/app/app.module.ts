@@ -20,6 +20,7 @@ import { HeaderComponent } from './components/partials/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { ProductHeaderComponent } from './components/pages/home/home-components/product-header/product-header.component';
 import { FiltersComponent } from './components/pages/home/home-components/filters/filters.component';
+import { ProductBoxComponent } from './components/pages/home/home-components/product-box/product-box.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FiltersComponent } from './components/pages/home/home-components/filter
     HeaderComponent,
     HomeComponent,
     ProductHeaderComponent,
-    FiltersComponent
+    FiltersComponent,
+    ProductBoxComponent
   ],
   imports: [
     BrowserModule,
