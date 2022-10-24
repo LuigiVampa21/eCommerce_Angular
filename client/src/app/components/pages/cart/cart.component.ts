@@ -33,4 +33,8 @@ export class CartComponent implements OnInit {
     this.dataSource = this.cart.items;
   }
 
+  getTotal(items:Array<CartItem>):number{
+  return items.map(item => item.price * item.quantity ).reduce((curr,acc) => curr + acc, 0)
+  }
+
 }
