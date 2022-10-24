@@ -1,0 +1,10 @@
+<mat-card *ngIf="cart.items.length"> </mat-card>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" w-full>
+
+</table>
+<mat-card *ngIf="!cart.items.length">
+  <p>
+    Your cart is empty
+    <button mat-raised-button routerLink="/home">Start Shopping</button>
+  </p>
+</mat-card>
