@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  STORE_BASE_URL: "https://fakestoreapi.com",
+
 };
 
 /*
