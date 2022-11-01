@@ -22,6 +22,7 @@ import { ProductHeaderComponent } from './components/pages/home/home-components/
 import { FiltersComponent } from './components/pages/home/home-components/filters/filters.component';
 import { ProductBoxComponent } from './components/pages/home/home-components/product-box/product-box.component';
 import { CartComponent } from './components/pages/cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { CartComponent } from './components/pages/cart/cart.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
